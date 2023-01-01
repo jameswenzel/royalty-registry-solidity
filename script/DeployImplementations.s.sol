@@ -20,7 +20,7 @@ contract DeployImplementations is BaseCreate2Script {
 
         address overrideFactory = (new DeployOverrideFactory()).deploy();
         console2.log("Deploying Registry implementation");
-        registryImplementation = _create2IfNotDeployed({
+        registryImplementation = _immutableCreate2IfNotDeployed({
             salt: bytes32(0),
             broadcaster: deployer,
             initCode: abi.encodePacked(type(RoyaltyRegistry).creationCode, abi.encode(overrideFactory))
@@ -29,7 +29,7 @@ contract DeployImplementations is BaseCreate2Script {
         address fallbackRegistry = (new DeployFallbackRegistry()).deploy();
 
         console2.log("Deploying Engine implementation");
-        engineImplementation = _create2IfNotDeployed({
+        engineImplementation = _immutableCreate2IfNotDeployed({
             salt: bytes32(0),
             broadcaster: deployer,
             initCode: abi.encodePacked(type(RoyaltyEngineV1).creationCode, abi.encode(fallbackRegistry))

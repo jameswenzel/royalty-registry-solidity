@@ -1,0 +1,52 @@
+# TransparentUpgradeableProxy
+
+## Addresses:
+`0x0779702742c1397700e452A0976EfEF18D874764`
+`0x3D1151dc590ebF5C04501a7d4E1f8921546774eA`
+
+
+## Standard Input Json:
+`TransparentUpgradeableProxy.json`
+
+
+## Constructor arguments:
+```
+0000000000000000000000005eb55a6805b5e0a6acec8803a31aaaae4d6c275e0000000000000000000000000779702742c1397700e452a0976efef18d87476400000000000000000000000000000000000000000000000000000000000000600000000000000000000000000000000000000000000000000000000000000000
+```
+
+# RoyaltyRegistry
+
+## Addresses:
+`0x64427932eFE137F80b012552B6772F7f58ddd9a6`
+
+
+## Standard Input Json:
+`RoyaltyRegistry.json`
+
+```
+000000000000000000000000734513f61a65b3745fc7bb574adfe18379355a1c
+```
+
+# RoyaltyEngineV1
+
+## Addresses
+`0x090929d8c85a8B55CF786F54d8C7a927c211F882`
+
+## Standard Input JSON
+`RoyaltyEngineV1.json`
+
+## Constructor Arguments
+
+```
+000000000000000000000000b78fc2052717c7ae061a14db1fb2038d5ac34d29
+```
+
+# OverrideFactory
+
+## Addresses
+`0x734513F61a65B3745fC7BB574aDFe18379355a1C`
+
+## Standard Input JSON
+`EIP2981OverrideFactory.json`
+
+## Constructor Arguments
