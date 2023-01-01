@@ -1,0 +1,9 @@
+create2-helpers/=lib/create2-helpers/src/
+create2-scripts/=lib/create2-helpers/script/
+ds-test/=lib/forge-std/lib/ds-test/src/
+forge-std/=lib/forge-std/src/
+libraries-solidity/=lib/libraries-solidity/contracts/
+openzeppelin-contracts/=lib/create2-helpers/lib/openzeppelin-contracts/
+@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/
+@openzeppelin/contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/
+@manifoldxyz/libraries-solidity/=lib/libraries-solidity/

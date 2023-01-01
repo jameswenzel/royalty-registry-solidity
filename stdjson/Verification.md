@@ -1,0 +1,141 @@
+# General
+
+- **Compiler Type**
+  - Solidity (Standard-Json-Input)
+- **Compiler Version**
+  - v0.8.17+commit.8df45f5f
+- **Open Source License Type**
+  - MIT
+
+
+# TransparentUpgradeableProxy
+
+## Addresses
+`0x0779702742c1397700e452A0976EfEF18D874764`
+`0x3D1151dc590ebF5C04501a7d4E1f8921546774eA`
+
+## Standard Input Json
+`TransparentUpgradeableProxy.json`
+
+## Constructor arguments
+```
+0000000000000000000000005eb55a6805b5e0a6acec8803a31aaaae4d6c275e0000000000000000000000000779702742c1397700e452a0976efef18d87476400000000000000000000000000000000000000000000000000000000000000600000000000000000000000000000000000000000000000000000000000000000
+```
+
+# RoyaltyRegistry
+
+## Address
+`0x64427932eFE137F80b012552B6772F7f58ddd9a6`
+
+
+## Standard Input Json
+`RoyaltyRegistry.json`
+
+
+## Constructor Arguments
+```
+000000000000000000000000734513f61a65b3745fc7bb574adfe18379355a1c
+```
+
+# RoyaltyEngineV1
+
+## Addresses
+`0x090929d8c85a8B55CF786F54d8C7a927c211F882`
+
+## Standard Input JSON
+`RoyaltyEngineV1.json`
+
+## Constructor Arguments
+
+```
+000000000000000000000000b78fc2052717c7ae061a14db1fb2038d5ac34d29
+```
+
+# RoyaltySplitter
+
+## Address
+`0x74b2a6ecc225dc85af74b5ea12c8f26fba86c571`
+
+## Standard Input JSON
+`RoyaltySplitter.json`
+
+## Constructor Arguments
+```
+```
+
+# RoyaltyOverrideCloneable
+
+## Address
+`0x5fb96dac4dc7886affa2860df4caa9ddfd0c9798`
+
+## Standard Input JSON
+`EIP2981RoyaltyOverrideCloneable.json`
+
+## Constructor Arguments
+```
+```
+
+# MultiReceiverRoyaltyOverrideCloneable
+
+## Address
+`0xa9376f59aff8a8a7673688a588724e1b05136198`
+
+## Standard Input JSON
+`EIP2981MultiReceiverRoyaltyOverrideCloneable.json`
+
+## Constructor Arguments
+```
+```
+
+# OverrideFactory
+
+## Addresses
+`0x734513F61a65B3745fC7BB574aDFe18379355a1C`
+
+## Standard Input JSON
+`EIP2981OverrideFactory.json`
+
+## Constructor Arguments
+```
+0000000000000000000000005fb96dac4dc7886affa2860df4caa9ddfd0c9798000000000000000000000000a9376f59aff8a8a7673688a588724e1b0513619800000000000000000000000074b2a6ecc225dc85af74b5ea12c8f26fba86c571
+```
+
+
+# FallbackRegistry
+
+## Address
+`0xB78fC2052717C7AE061a14dB1fB2038d5AC34D29`
+
+## Standard Input JSON
+`FallbackRegistry.json`
+
+## Constructor Arguments
+```
+000000000000000000000000c669b5f25f03be2ac0323037cb57f49eb543657a
+```
+
+# ProxyAdmin
+
+## Address
+`0x734513F61a65B3745fC7BB574aDFe18379355a1C`
+
+## Standard Input JSON
+`ProxyAdmin.json`
+
+## Constructor Arguments
+```
+000000000000000000000000e3a6cd067a1193b903143c36da00557c9d95c41e
+```
+
+# TimelockController
+
+## Address
+`0xe3A6CD067a1193b903143C36dA00557c9d95C41e`
+
+## Standard Input JSON
+`TimelockController.json`
+
+## Constructor Arguments
+```
+0000000000000000000000000000000000000000000000000000000000015180000000000000000000000000000000000000000000000000000000000000008000000000000000000000000000000000000000000000000000000000000000c000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000520f09e18895acd6a9e75de01355b5691bf3d92b00000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000
+```
