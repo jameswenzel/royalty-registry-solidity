@@ -15,12 +15,17 @@ contract DeployRegistryMultichain is BaseCreate2Script {
     function run() public {
         setUp();
         REGISTRY_SALT = createBytes32ImmutableSalt(address(0), uint96(bytes12("REGISTRY")));
-        ENGINE_SALT == createBytes32ImmutableSalt(address(0), uint96(bytes12("ENGINE")));
+        ENGINE_SALT = bytes32(0);
         runOnNetworks(this.deploy, vm.envString("NETWORKS", ","));
     }
 
     function deploy() public returns (address) {
-        address safe = (new DeploySafe()).deploy();
+        address safe;
+        // try (new DeploySafe()).deploy() returns (address _safe) {
+        //     safe = _safe;
+        // } catch {
+        safe = 0x520f09e18895ACd6A9E75dE01355b5691Bf3D92B;
+        // }
         vm.setEnv("TIMELOCK_PROPOSERS", vm.toString(safe));
         address timelock = (new DeployTimelockController()).deploy();
         vm.setEnv("INITIAL_PROXY_ADMIN_OWNER", vm.toString(timelock));
