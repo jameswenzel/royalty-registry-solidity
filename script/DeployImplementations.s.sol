@@ -6,12 +6,14 @@ import { RoyaltyRegistry } from "../contracts/RoyaltyRegistry.sol";
 import { RoyaltyEngineV1 } from "../contracts/RoyaltyEngineV1.sol";
 import { DeployOverrideFactory } from "./DeployOverrideFactory.s.sol";
 import { DeployFallbackRegistry } from "./DeployFallbackRegistry.s.sol";
+import { createBytes32ImmutableSalt } from "create2-helpers/lib/ImmutableSalt.sol";
 
 contract DeployImplementations is BaseCreate2Script {
     address registryImplementation;
     address engineImplementation;
 
     function run() public {
+        setUp();
         runOnNetworks(this.deploy, vm.envString("NETWORKS", ","));
     }
 
@@ -20,7 +22,7 @@ contract DeployImplementations is BaseCreate2Script {
 
         address overrideFactory = (new DeployOverrideFactory()).deploy();
         console2.log("Deploying Registry implementation");
-        registryImplementation = _create2IfNotDeployed({
+        registryImplementation = _immutableCreate2IfNotDeployed({
             salt: bytes32(0),
             broadcaster: deployer,
             initCode: abi.encodePacked(type(RoyaltyRegistry).creationCode, abi.encode(overrideFactory))
@@ -29,7 +31,7 @@ contract DeployImplementations is BaseCreate2Script {
         address fallbackRegistry = (new DeployFallbackRegistry()).deploy();
 
         console2.log("Deploying Engine implementation");
-        engineImplementation = _create2IfNotDeployed({
+        engineImplementation = _immutableCreate2IfNotDeployed({
             salt: bytes32(0),
             broadcaster: deployer,
             initCode: abi.encodePacked(type(RoyaltyEngineV1).creationCode, abi.encode(fallbackRegistry))
